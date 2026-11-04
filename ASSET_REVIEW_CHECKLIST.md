@@ -21,7 +21,7 @@ Capture from a fresh, isolated emulator/profile using synthetic records. Do not 
 
 Current project materials describe file movement and folder access. Do not launch the downloaded app against real Desktop, Downloads, external drives, or network shares for portfolio capture.
 
-- [ ] Confirm the current Xcode source/project location and match it to the compiled app artifact.
+- [ ] Record the source revision and build identifier for each screenshot; the current Xcode worktree is uncommitted and its local `.app` has not been matched to that source revision.
 - [ ] Use a clean macOS test account or VM with disposable directories and synthetic files.
 - [ ] Menu bar Shelf with a synthetic file and no personal filenames.
 - [ ] Destination search with synthetic folder names.
@@ -35,7 +35,7 @@ Current project materials describe file movement and folder access. Do not launc
 - [ ] A focused audio recovery instrumentation report, clearly distinguishing executed tests from compiled test sources.
 - [ ] A repeatable benchmark summary with the existing synthetic SQLite data, device/OS, warm-up, run count, medians, and the query-only limitation.
 - [ ] A source-verified architecture diagram reviewed against the current `feature/subscription-implementation` working tree.
-- [ ] Drop & Route's matching Xcode project/source and test evidence, if it is available and approved for inspection.
+- [ ] Drop & Route behavioral test results or reproducible runtime evidence. The located XCTest files are template tests without behavior assertions; do not report them as functional coverage.
 - [ ] A Product Owner-approved public contact method.
 
 Do not include source files, database snapshots, raw user photos/audio, transcripts, tokens, local configs, account identifiers, deployment endpoints, or unredacted logs.

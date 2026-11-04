@@ -1,0 +1,8 @@
+flowchart TB
+    User[User] --> Compose[Jetpack Compose UI]
+    Compose --> VM[ViewModels]
+    VM --> Domain[Domain use cases and capability policy]
+    Domain --> Repo[Repository interfaces]
+    Repo --> Room[Room local persistence]
+    Repo --> Files[App-private media storage]
+    Domain -. Entitled processing only .-> Speech[Android on-device SpeechRecognizer]

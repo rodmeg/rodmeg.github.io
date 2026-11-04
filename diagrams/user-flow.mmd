@@ -1,0 +1,10 @@
+flowchart LR
+    Day[Open selected day] --> Capture[Capture photo or audio]
+    Capture --> Save[Save to device]
+    Save --> Review[Browse or play evidence]
+    Review --> Access{Current entitlement}
+    Access -->|Free| Basic[Read/play; do not start STT]
+    Access -->|Pro target| Advanced[Speech and advanced capabilities]
+    Basic --> Erase[Explicit erase-all privacy action]
+    Advanced --> Erase
+    Note[Billing is not implemented] -.-> Access
